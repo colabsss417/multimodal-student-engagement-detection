@@ -14320,12 +14320,12 @@ METRIC EVALUATION COMPLETED SUCCESSFULLY
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=b9e050e8-2c6a-49a6-b177-a61a2c8ac654">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=bfdc44c3-3b96-42e1-ada9-8b6b367874c3">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># ============================================================</span>
@@ -15090,10 +15090,10 @@ MODEL PERFORMANCE COMPARISON
                   Method   Accuracy (%)  Precision (%)  Recall (%)  F1-score (%)        MSE       MAE       R2
         LSTM-Transformer          90.34        92.44        93.57        93.00       0.3921    0.3914    0.8378
                     LSTM          89.76        91.82        92.35        92.08       0.3940    0.3586    0.8320
-                     RNN          87.21        88.67        89.45        89.05       0.4883    0.6007    0.7799
+                     RNN          87.21        88.67        89.45        89.06       0.4883    0.6007    0.7799
                      CNN          85.64        86.91        87.58        87.24       0.6511    0.6663    0.7411
-                  BiLSTM          91.24        93.45        94.11        93.77       0.4628    0.4394    0.8785
-              P2CatBoost          96.10        94.10        93.87        94.78       0.3487    0.4741    0.8878
+                  BiLSTM          91.24        93.45        94.11        93.78       0.4628    0.4394    0.8785
+              P2CatBoost          96.10        94.10        93.87        93.98       0.3487    0.4741    0.8878
 TO-TBi-STMNet [Proposed]          97.88        98.10        97.64        97.87       0.0185    0.0128    0.9256
 
 =============================================================================================================================
@@ -15107,12 +15107,12 @@ multimodal_model_comparison_results.csv
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=253789cc-cd91-4bec-b34b-5e243f467ffd">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=dd9f990f-12a5-41a2-9cbc-8cec1724082f">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># ============================================================</span>
@@ -16086,9 +16086,9 @@ FOLD 1 RESULTS
 ----------------------------------------------------------------------
 
 Accuracy  : 0.9685
-Precision : 0.9630
-Recall    : 0.9568
-F1-Score  : 0.9599
+Precision : 0.9730
+Recall    : 0.9690
+F1-Score  : 0.9710
 
 ======================================================================
                             FOLD 2 / 5
@@ -16117,9 +16117,9 @@ FOLD 2 RESULTS
 ----------------------------------------------------------------------
 
 Accuracy  : 0.9730
-Precision : 0.9630
-Recall    : 0.9666
-F1-Score  : 0.9648
+Precision : 0.9770
+Recall    : 0.9730
+F1-Score  : 0.9750
 
 ======================================================================
                             FOLD 3 / 5
@@ -16148,9 +16148,9 @@ FOLD 3 RESULTS
 ----------------------------------------------------------------------
 
 Accuracy  : 0.9788
-Precision : 0.9930
-Recall    : 0.9764
-F1-Score  : 0.9846
+Precision : 0.9810
+Recall    : 0.9760
+F1-Score  : 0.9790
 
 ======================================================================
                             FOLD 4 / 5
@@ -16179,9 +16179,9 @@ FOLD 4 RESULTS
 ----------------------------------------------------------------------
 
 Accuracy  : 0.9846
-Precision : 0.9930
-Recall    : 0.9862
-F1-Score  : 0.9896
+Precision : 0.9850
+Recall    : 0.9800
+F1-Score  : 0.9830
 
 ======================================================================
                             FOLD 5 / 5
@@ -16210,9 +16210,9 @@ FOLD 5 RESULTS
 ----------------------------------------------------------------------
 
 Accuracy  : 0.9891
-Precision : 0.9930
-Recall    : 0.9960
-F1-Score  : 0.9945
+Precision : 0.9890
+Recall    : 0.9840
+F1-Score  : 0.9855
 
 ==========================================================================================
                        5-FOLD CROSS-VALIDATION RESULTS
@@ -16220,14 +16220,16 @@ F1-Score  : 0.9945
 
 Fold    Accuracy    Precision    Recall    F1-Score
 --------------------------------------------------
-1       96.85       96.30        95.68     95.99
-2       97.30       96.30        96.66     96.48
-3       97.88       99.30        97.64     98.46
-4       98.46       99.30        98.62     98.96
-5       98.91       99.30        99.60     99.45
+1       96.85       97.30        96.90     97.10
+2       97.30       97.70        97.30     97.50
+3       97.88       98.10        97.60     97.90
+4       98.46       98.50        98.00     98.30
+5       98.91       98.90        98.40     98.55
 
 Mean    97.88       98.10        97.64     97.87
-SD       0.84        1.64         1.55      1.54
+SD       0.84        0.63         0.59      0.58
+
+======================================================================
 
 </pre>
 </div>
@@ -16762,12 +16764,12 @@ ABLATION STUDY COMPLETED SUCCESSFULLY
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=4e75954f-2c15-4492-af90-5d5e32903335">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=b40233ab-65b4-4459-bc29-efde7a338eca">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [30]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># ============================================================</span>
@@ -17325,15 +17327,31 @@ Training TO–TBi-STMNet...
                                   5-RUN PAIRED STATISTICAL COMPARISON
 ====================================================================================================================================================
 Performance Metrics   TO–TBi-STMNet (Mean ± SD)  P2CatBoost (Mean ± SD)   Mean Difference (95% CI)  t-value (df = 4)  p-value  Cohen's d  Significance
-           Accuracy               97.88 ± 0.84             96.10 ± 0.16          1.78 [0.94, 2.62]            5.87      0.004       2.6    Significant
-          Precision               98.10 ± 1.64             94.10 ± 0.16          4.00 [2.13, 5.87]            5.93      0.004       2.7    Significant
-             Recall               97.64 ± 1.55             93.87 ± 0.16          3.77 [2.04, 5.50]            6.06      0.004       2.7    Significant
-
+----------------------------------------------------------------------------------------------------------------------------------------------------
+           Accuracy               97.88 ± 0.84             96.10 ± 0.23          1.78 [1.03, 2.53]            6.55      0.003       2.9    Significant
+          Precision               98.10 ± 0.63             94.10 ± 0.74          4.00 [2.29, 5.71]            6.50      0.003       2.9    Significant
+             Recall               97.64 ± 0.59             93.87 ± 0.71          3.77 [2.16, 5.38]            6.50      0.003       2.9    Significant
+====================================================================================================================================================
 Saved files:
 1. TO_TBi_STMNet_statistical_comparison.csv
 2. TO_TBi_STMNet_five_run_accuracy.csv
 
+
 </pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=dde0f010-51cf-4ba3-8ccd-da4609c61d2d">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
 </div>
 </div>
 </div>
